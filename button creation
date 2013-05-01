@@ -1,0 +1,24 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button - Go to mkyong.com" />
+        
+button.setOpaque(false);
+button.setContentAreaFilled(false);
+button.setBorderPainted(false);
+</LinearLayout>
+
+Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+double width = screenSize.getWidth();
+double height = screenSize.getHeight();
+
+// we can use the above 3 lines to find the pixels and create the appropriate button locations
+
