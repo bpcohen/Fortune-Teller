@@ -1,0 +1,45 @@
+package ec327.project.fortuneteller;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Intent;
+import android.view.Menu;
+import android.view.View;
+
+public class FlashEven extends Activity {
+
+  @Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_flash_even);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.flash_even, menu);
+		return true;
+	}
+	
+	public void flash(View view) {
+		// Get the current count and max from intent
+		Intent intent = getIntent();
+		int count = intent.getIntExtra("int_count", 0);
+		int max = intent.getIntExtra("int_max", 0);
+		int choice = intent.getIntExtra("int_choice", 1);
+		if(count < max) {
+			count++;
+			Intent newIntent = new Intent(this, FlashOdd.class);
+			newIntent.putExtra("int_count", count);
+			newIntent.putExtra("int_max", max);
+			newIntent.putExtra("int_choice", choice);
+			startActivity(newIntent);
+		}
+		else {
+			Intent newIntent = new Intent(this, ButtonEven.class);
+			newIntent.putExtra("int_choice", choice);
+			startActivity(newIntent);
+		}
+	}
+
+}
