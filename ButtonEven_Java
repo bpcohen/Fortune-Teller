@@ -1,0 +1,106 @@
+package ec327.project.fortuneteller;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Intent;
+import android.view.Menu;
+import android.view.View;
+
+public class ButtonEven extends Activity {
+
+  @Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_button_even);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.button_even, menu);
+		return true;
+	}
+	
+	public void flash3(View view) {
+		//Get previous choice value and increment
+		Intent prevIntent = getIntent();
+		int choice = prevIntent.getIntExtra("int_choice",1);
+		choice = choice+1;
+		//if this is first number button choice, flash folds. Else, show fortune
+		if(choice < 2) {
+			Intent intent = new Intent(this, FlashEven.class);
+			int count = 1;
+			int max = 3;
+			intent.putExtra("int_count", count);
+			intent.putExtra("int_max", max);
+			intent.putExtra("int_choice",choice);
+			startActivity(intent);
+		}
+		else {
+			Intent intent = new Intent(this, Fortune3.class);
+			startActivity(intent);
+		}
+	}
+	public void flash2(View view) {
+		//Get previous choice value and increment
+		Intent prevIntent = getIntent();
+		int choice = prevIntent.getIntExtra("int_choice",1);
+		choice = choice+1;
+		//if this is first number button choice, flash folds. Else, show fortune
+		if(choice < 2) {
+			Intent intent = new Intent(this, FlashEven.class);
+			int count = 1;
+			int max = 2;
+			intent.putExtra("int_count", count);
+			intent.putExtra("int_max", max);
+			intent.putExtra("int_choice",choice);
+			startActivity(intent);
+		}
+		else {
+			Intent intent = new Intent(this, Fortune2.class);
+			startActivity(intent);
+		}
+	}
+	public void flash7(View view) {
+		//respond to button by flashing 5 images
+		//Get previous choice value and increment
+		Intent prevIntent = getIntent();
+		int choice = prevIntent.getIntExtra("int_choice",1);
+		choice = choice+1;
+		//if this is first number button choice, flash folds. Else, show fortune
+		if(choice < 2) {
+			Intent intent = new Intent(this, FlashEven.class);
+			int count = 1;
+			int max = 7;
+			intent.putExtra("int_count", count);
+			intent.putExtra("int_max", max);
+			intent.putExtra("int_choice",choice);
+			startActivity(intent);
+		}
+		else {
+			Intent intent = new Intent(this, Fortune7.class);
+			startActivity(intent);
+		}
+	}
+	public void flash6(View view) {
+		//Get previous choice value and increment
+		Intent prevIntent = getIntent();
+		int choice = prevIntent.getIntExtra("int_choice",1);
+		choice = choice+1;
+		//if this is first number button choice, flash folds. Else, show fortune
+		if(choice < 2) {
+			Intent intent = new Intent(this, FlashEven.class);
+			int count = 1;
+			int max = 6;
+			intent.putExtra("int_count", count);
+			intent.putExtra("int_max", max);
+			intent.putExtra("int_choice",choice);
+			startActivity(intent);
+		}
+		else {
+			Intent intent = new Intent(this, Fortune6.class);
+			startActivity(intent);
+		}
+	}
+
+}
