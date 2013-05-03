@@ -8,7 +8,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Fortune1" >
 
-    <EditText
+    <TextView
         android:id="@+id/editText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,12 +17,10 @@
         android:layout_marginTop="14dp"
         android:ems="10"
         android:gravity="center"
-        android:text="Stay Classy Tonight" >
+        android:text="Stay Classy Tonight"
+        android:textSize="30sp" />
 
-        <requestFocus />
-    </EditText>
-
-    <ImageView
+      <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,7 +29,7 @@
         android:layout_marginBottom="176dp"
         android:src="@drawable/gnt" />
 
-    <EditText
+    <TextView
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,6 +38,17 @@
         android:layout_marginBottom="116dp"
         android:ems="10"
         android:gravity="center"
-        android:text="Gin and Tonic" />
+        android:text="Gin and Tonic"
+        android:textSize="30sp"  />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="@string/home_page"
+        android:onClick="backToHome" />
 
 </RelativeLayout>
