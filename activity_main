@@ -13,24 +13,28 @@
         android:id="@+id/Button01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Yellow" />
+        android:text="Yellow"
+        android:onClick="flash6" />
 
     <Button
         android:id="@+id/Button02"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Green" />
+        android:text="Green"
+        android:onClick="flash5" />
 
     <Button
         android:id="@+id/Button03"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Red" />
+        android:text="Red"
+        android:onClick="flash3" />
 
     <Button
         android:id="@+id/Button07"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Blue" />
+        android:text="Blue"
+        android:onClick="flash4" />
 
 </TableLayout>
