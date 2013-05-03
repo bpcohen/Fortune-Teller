@@ -11,16 +11,38 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-    
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="Bombs Away!"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/jagerbomb" />
+
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_alignBottom="@+id/imageView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="25dp"
-        android:text="@string/home_page"
-        android:onClick="backToHome"  />
+        android:onClick="backToHome"
+        android:text="@string/home_page" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:text="Jager Bombs"
+        android:textSize="24sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
