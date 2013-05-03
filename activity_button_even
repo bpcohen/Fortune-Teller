@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/button1"
         android:layout_centerVertical="true"
-        android:text="6" />
+        android:text="6" 
+        android:onClick="flash6" />
 
     <Button
         android:id="@+id/button1"
@@ -23,7 +24,8 @@
         android:layout_above="@+id/Button03"
         android:layout_alignLeft="@+id/Button01"
         android:layout_marginBottom="18dp"
-        android:text="3" />
+        android:text="3"
+        android:onClick="flash3" />
 
     <Button
         android:id="@+id/Button01"
@@ -32,7 +34,8 @@
         android:layout_above="@+id/button1"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
-        android:text="2" />
+        android:text="2"
+        android:onClick="flash2" />
 
     <Button
         android:id="@+id/Button02"
@@ -41,7 +44,8 @@
         android:layout_alignLeft="@+id/Button03"
         android:layout_below="@+id/Button03"
         android:layout_marginTop="22dp"
-        android:text="7" />
+        android:text="7"
+        android:onClick="flash7" />
 
     <EditText
         android:id="@+id/editText1"
