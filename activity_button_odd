@@ -8,68 +8,60 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ButtonOdd" >
 
-    <LinearLayout
-        android:id="@+id/linearLayout1"
+    <ImageView
+        android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="71dp"
-        android:layout_marginTop="191dp"
-        android:orientation="vertical" >
-    </LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/odd_fold" />
 
-    <EditText
+    <TextView
         android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
-        android:gravity="center"
         android:ems="10"
-        android:text="Please Choose A Number" >
-
-        <requestFocus />
-    </EditText>
-
-    <Button
-        android:id="@+id/Button01"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_below="@+id/editText1"
-        android:layout_marginTop="14dp"
-        android:text="1"
-        android:onClick="flash1" />
+        android:gravity="center"
+        android:text="@string/choose_num"
+        android:textSize="30sp" />
 
     <Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/Button01"
+        android:id="@+id/Button08"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_alignRight="@+id/editText1"
         android:layout_below="@+id/Button01"
-        android:layout_marginTop="14dp"
-        android:text="4" 
-        android:onClick="flash4" />
+        android:layout_marginTop="19dp"
+        android:onClick="flash8" />
 
     <Button
-        android:id="@+id/Button03"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_alignTop="@+id/linearLayout1"
-        android:text="5" 
+        android:id="@+id/Button05"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/Button08"
+        android:layout_alignBottom="@+id/Button08"
+        android:layout_toLeftOf="@+id/Button08"
         android:onClick="flash5" />
 
     <Button
-        android:id="@+id/Button02"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/Button03"
-        android:layout_below="@+id/Button03"
-        android:layout_marginTop="15dp"
-        android:text="8" 
-        android:onClick="flash8" />
+        android:id="@+id/button04"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/Button08"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginTop="71dp"
+        android:onClick="flash4" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/button04"
+        android:layout_alignBottom="@+id/button04"
+        android:layout_toLeftOf="@+id/button04"
+        android:onClick="flash1" />
 
 </RelativeLayout>
