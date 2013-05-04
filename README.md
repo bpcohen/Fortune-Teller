@@ -12,7 +12,7 @@ README.txt
 
 1) https://github.com/bpcohen/Fortune-Teller.git
 
-2) 
+2) http://www.youtube.com/watch?v=2R-k4dOmJqk&feature=youtu.be
 
 3)
 a) Device: HTC One-X (4.7", 1280 x 720, hdpi)
